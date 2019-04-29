@@ -1,0 +1,91 @@
+# site name
+prefixName: 
+siteName: 如初
+# favicon and site master avatar
+favicon: /img/favicon.png
+avatar: /img/tux1.jpg
+url: https://wangd1.top
+description: 可山水万程，再难遇你
+pjax: 1
+# 1开启
+mathjax: 0
+
+notice: 欢迎啊
+lazyloadImg: /images/orange.progress-bar-stripe-loader.svg
+
+menus:
+  首页: { path: /, fa: fa-fort-awesome faa-shake }
+  归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
+    技术: {path: /categories/技术/, fa: fa-code }, 
+    生活: {path: /categories/生活/, fa: fa-file-text-o }, 
+    随想: {path: /categories/随想/, fa: fa-commenting-o }
+  } }
+  清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
+    书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
+    歌单: {path: /music/, fa: fa-headphones },
+    图集: {path: /tags/图集/, fa: fa-photo }
+  } }
+  留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
+  关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
+    我？: {path: /about/, fa: fa-meetup},
+  } }
+  RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
+
+
+# Home page sort type: -1: newer first，1: older first.
+homePageSortType: -1
+# Home page article shown number)
+homeArticleShown: 10
+# 背景图片 更好的修改
+bg:
+  - https://cdn.jsdelivr.net/gh/wangd1/cdn@2.3/img/bg/20170901.jpg
+  - https://cdn.jsdelivr.net/gh/wangd1/cdn@2.3/img/bg/20180505.jpg
+  - https://cdn.jsdelivr.net/gh/wangd1/cdn@2.3/img/bg/20180804.jpg
+  - https://cdn.jsdelivr.net/gh/wangd1/cdn@2.3/img/bg/20190407.jpg
+  - https://cdn.jsdelivr.net/gh/wangd1/cdn@2.3/img/bg/20190410.jpg
+  - https://cdn.jsdelivr.net/gh/wangd1/cdn@2.3/img/bg/20190413.jpg
+
+# 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
+# bgclass: filter-dim
+
+# your site build time or founded date
+siteBuildingTime: 04/23/2019
+
+#social  url, img PC端配置
+social:
+  github: {url: http://github.com/wangd1, img: /images/github.png}
+  wangyiyun: {url: https://music.163.com/#/user/home?id=115924270, img: /images/wangyiyun.png}
+  wechat: {url: /#, qrcode:  https://cdn.jsdelivr.net/gh/wangd1/cdn@2.31/img/wechat/wechatcd.png, img: https://cdn.jsdelivr.net/gh/wangd1/cdn@2.31/img/wechat/wechat.png}
+
+#social  url, img 移动端配置
+msocial:
+  github: {url: http://github.com/wangd1, fa: fa-github, color: 333}
+  qq: {url: https://wpa.qq.com/msgrd?v=3&uin=1814380567&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
+
+donate:
+  paypal: https://www.paypal.me/hojuncn
+
+# 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
+movies:
+  url: https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
+  # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
+  name: Unbroken.mp4
+
+aplayer: 
+  id: 2589849534
+  server: netease
+  type: playlist
+  fixed: true
+  mini: false
+  autoplay: false
+  loop: all
+  order: random
+  preload: auto
+  volume: 0.7
+  mutex: true
+
+# Valine
+valine: true
+v_appId: FdNUDx2iJkmRJEkP5gQioGii-gzGzoHsz
+v_appKey: QRCgOJB0yS8x4skelVvm7mPM
+

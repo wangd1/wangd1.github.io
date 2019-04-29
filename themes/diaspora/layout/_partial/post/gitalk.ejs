@@ -1,0 +1,11 @@
+<% if (theme.gitalk != undefined){ %>
+    <div id='gitalk-container' class="comment link"
+        data-ae='<%=theme.gitalk.autoExpand%>'
+        data-ci='<%=theme.gitalk.client_id%>'
+        data-cs='<%=theme.gitalk.client_secret%>'
+        data-r='<%=theme.gitalk.repo%>'
+        data-o='<%=theme.gitalk.owner%>'
+        data-a='<%=theme.gitalk.admin%>'
+        data-d='<%=theme.gitalk.distractionFreeMode%>'
+    >查看评论</div>
+<%}%>
