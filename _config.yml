@@ -118,9 +118,15 @@ live2d:
   model:
     use: shizuku
   display:
-    position: right
+    position: left
     width: 150
     height: 300
     hOffset: 90
   mobile:
     show: true
+    
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
