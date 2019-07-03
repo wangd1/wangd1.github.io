@@ -50,7 +50,7 @@
                 </div>
               {% endif %}
 
-              {% if site.categories.length > 0 %}
+              {% if site.categories.length > 1000000 %}
                 {% set categoriesPageQuery = site.pages.find({type: 'categories'}, {lean: true}) %}
                 {% set hasCategoriesPage = categoriesPageQuery.length > 0 %}
                 <div class="site-state-item site-state-categories">

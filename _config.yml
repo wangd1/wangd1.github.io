@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 如初
-subtitle:
-description: 胆小怕生，不易相处
+title: Wangd1's Blog
+subtitle: 可山水万程，再难遇你
+description: 胆小内向，不易相处
 keywords:
-author: wangd1
+author: Wangd1
 language: zh-CN
 timezone:
 
@@ -119,9 +119,9 @@ live2d:
     use: shizuku
   display:
     position: left
-    width: 150
-    height: 300
-    hOffset: 90
+    width: 130
+    height: 260
+    hOffset: 50
   mobile:
     show: true
 
