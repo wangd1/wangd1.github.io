@@ -124,7 +124,7 @@ live2d:
     hOffset: 90
   mobile:
     show: true
-    
+
 search:
   path: search.xml
   field: post

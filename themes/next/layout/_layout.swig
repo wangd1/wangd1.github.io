@@ -122,5 +122,6 @@
   {% include '_third-party/copy-code.swig' %}
   {% include '_third-party/chatra.swig' %}
   {% include '_third-party/tidio.swig' %}
+  <script type="text/javascript" src="/js/love.js"></script>
 </body>
 </html>
