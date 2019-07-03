@@ -8,7 +8,7 @@ subtitle:
 description: 如初
 keywords:
 author: 如初
-language: zh-cn
+language: zh-CN
 timezone:
 
 # URL
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: Sakura
+theme: next ## Sakura
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
