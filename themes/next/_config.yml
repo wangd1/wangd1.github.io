@@ -1180,3 +1180,7 @@ vendors:
 css: css
 js: js
 images: images
+
+# Online contact 
+daovoice: true
+daovoice_app_id: 61c9c89e
