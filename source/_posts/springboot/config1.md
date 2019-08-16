@@ -1,9 +1,9 @@
-title: Spring Boot 学习 02：配置文件
+title: Spring Boot 学习 02：配置文件1
 author: wangd1
 avatar: '/img/tux1.jpg'
 authorLink: wangd1.top
 comments: true
-date: 2019-7-2 21:12:15
+date: 2019-7-2 20:12:15
 tags: [Spring Boot]
 photos:
 
