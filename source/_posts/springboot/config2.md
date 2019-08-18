@@ -248,4 +248,3 @@ Spring Boot启动会扫描以下位置的application.properties/.yml文件作为
 
 ![](https://cdn.jsdelivr.net/gh/wangd1/cdn@2.34/blogimg/config/1565964525271.png)
 
-未完...

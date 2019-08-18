@@ -16,6 +16,14 @@ photos:
 - 日志门面（抽象）如：jboss-logging，slf4j，JCL
 - 日志实现（实现）如：log4j，log4j2，logback，JUL
 
+对于日志实现，JUL实现简陋，很多地方被开发者吐槽，所以排除；log4j和logback是同一个作者开发的，且logback是log4j的升级版，比log4j会更好点，排除log4j；log4j2不是log4j的升级版，因为太过于优秀，部分框架对其的支持有限，所以排除。
+
+所以日志实现选中logback。
+
+对于日志门面，jboss-logging很久未更新，而slf4j的作者就是log4j和logback的作者，所以选用slf4j和logback会比较合得来....
+
+所以日志门面选用slf4j。并且在springboot中也是使用的  slf4j + logback。
+
 <!--more-->
 
 ### 简单使用
@@ -40,7 +48,7 @@ public class HelloWorld {
 
 ### 如何让系统中的所有的日志都统一到slf4j
 
-在系统中，自己使用了slf4j+logback，但是Spring默认的是commons-logging；如果集成Hibernate，他又自带使用过了jboss-logging；如果集成mybatis，他又有自己的日志系统。
+在系统中，自己使用了slf4j+logback，但是Spring默认的是commons-logging；如果集成Hibernate，他又自带了jboss-logging；如果集成mybatis，他又有自己的日志系统。
 
 想统一日志框架，都使用slf4j输出日志，可以参考slf4j官网 [https://www.slf4j.org/legacy.html](https://www.slf4j.org/legacy.html)
 
@@ -185,7 +193,47 @@ logging.path=/spring/log
    logging.pattern.file=%d{yyyy-MM-dd} === [%thread] %-5level %logger{50} - %msg%n
    ```
 
-4. 指定日志配置文件
+4. 使用@Slf4j注解
+
+   在使用类名的时候，每个类都需要自己编写
+   
+   ```java
+   Logger mLogger = LoggerFactory.getLogger(XXX.class);
+   ```
+   
+   会很不方便，所以可以通过一个注解（@Slf4j）来帮我们实现，该注解就可以帮我们自动创建一个 log对象。
+   
+   但是 如果使用 @Slf4j 注解 需要两点，
+   
+   1. 安装lombok插件，参考idea安装插件
+   
+   2. 添加 lombok的依赖
+   
+   ```xml
+   <!--添加lombok依赖-->
+   <dependency>
+       <groupId>org.projectlombok</groupId>
+       <artifactId>lombok</artifactId>
+   </dependency>
+   ```
+   
+   就可以使用@Slf4j注解了。
+   
+   ```java
+   @RunWith(SpringRunner.class)
+   @SpringBootTest
+   @Slf4j
+   public class SpringBoot03LoggingApplicationTests {
+       @Test
+       public void contextLoads() {
+           log.info("这是info日志");  //
+           log.warn("这是warn日志");  //警告日志
+           log.error("这是error日志"); //错误日志
+       }
+   }  
+   ```
+   
+5. 指定日志配置文件
 
    ![](https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566060346853.png)
 
@@ -205,4 +253,64 @@ logging.path=/spring/log
   就可以在启动环境为dev时，日志打印的格式为对应配置的格式
   ```
 
-所以logback.xml，格式自行查询。
+所以logback[-spring].xml，格式需要自己查询。
+
+另外logback.xml文件中配置了springProfile的话，运行会报错。
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+
+    <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender">
+        <springProfile name="dev">
+            <layout class="ch.qos.logback.classic.PatternLayout">
+                <pattern>%d -- %msg%n</pattern>
+            </layout>
+        </springProfile>
+        <springProfile name="test">
+            <layout class="ch.qos.logback.classic.PatternLayout">
+                <pattern>%d -----== %msg%n</pattern>
+            </layout>
+        </springProfile>
+    </appender>
+
+    <appender name="fileInfoLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!--要拦截的日志级别-->
+            <level>ERROR</level>
+            <!--如果匹配，则禁止-->
+            <onMatch>DENY</onMatch>
+            <!--如果不匹配，则允许记录-->
+            <onMismatch>ACCEPT</onMismatch>
+        </filter>
+        <encoder>
+            <pattern>%d -- %msg%n</pattern>
+        </encoder>
+        <!--滚动策略-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--路径-->
+            <fileNamePattern>d:/info-%d.log</fileNamePattern>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="fileErrorLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--添加 范围 过滤-->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        <encoder>
+            <pattern>%d -- %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>d:/error-%d.log</fileNamePattern>
+        </rollingPolicy>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="consoleLog" />
+        <appender-ref ref="fileInfoLog"/>
+        <appender-ref ref="fileErrorLog"/>
+    </root>
+</configuration>
+```
+
