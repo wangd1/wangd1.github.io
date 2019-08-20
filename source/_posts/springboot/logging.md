@@ -119,7 +119,7 @@ public class SpringBoot03LoggingApplicationTests {
     @Test
     public void contextLoads() {
         //日记级别：
-        //从低到高：trace<debug<info<warn>error
+        //从低到高：trace<debug<info<warn<error
         //可以调整输出的日志级别；日志就只在这个级别和之后的高级别生效
         logger.trace("这是trace日志");
         logger.debug("这是debug日志");  //调试日志
