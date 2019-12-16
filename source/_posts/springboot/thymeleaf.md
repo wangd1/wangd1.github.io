@@ -97,13 +97,10 @@ welcome.html：
 
 ## Thymeleaf语法
 
-上面是简单的使用，并用到了`th:text`，这个就是Thymeleaf的语法
-
 可以参考 [https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.pdf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.pdf)
 
 
 
-未完...
 
 
 
@@ -115,8 +112,3 @@ welcome.html：
 
 
 
-
-
-
-
-JSP，Freemarker，Thymeleaf等
