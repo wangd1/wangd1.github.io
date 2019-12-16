@@ -9,7 +9,7 @@ photos:
 
 ---
 
-## SpringBoot整合Mybatis
+## SpringBoot整合Swagger2
 
 ### swagger2 是一个规范和完整的框架，用于生成、描述、调用和可视化Restful风格的web服务：
 
