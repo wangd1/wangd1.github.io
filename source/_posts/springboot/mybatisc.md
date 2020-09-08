@@ -1,4 +1,4 @@
-title: Spring Boot 学习 05：Session共享(Spring Session)
+title: Spring Boot 学习 06：Springboot与Mybatis集成(注解版)
 author: wangd1
 avatar: '/img/tux1.jpg'
 authorLink: wangd1.top

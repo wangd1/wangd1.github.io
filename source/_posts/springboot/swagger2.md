@@ -1,4 +1,4 @@
-title: Spring Boot 学习 06：Springboot整合Swagger2
+title: Spring Boot 学习 05：Springboot整合Swagger2
 author: wangd1
 avatar: '/img/tux1.jpg'
 authorLink: wangd1.top
