@@ -1,4 +1,4 @@
-title: Spring Boot 学习 02：配置文件2
+title: Spring Boot 配置文件2
 author: wangd1
 avatar: '/img/tux1.jpg'
 authorLink: wangd1.top

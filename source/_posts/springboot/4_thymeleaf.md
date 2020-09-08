@@ -1,4 +1,4 @@
-title: Spring Boot 学习 04：Thymeleaf
+title: Spring Boot Thymeleaf
 author: wangd1
 avatar: '/img/tux1.jpg'
 authorLink: wangd1.top

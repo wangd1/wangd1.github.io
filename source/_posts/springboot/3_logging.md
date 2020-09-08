@@ -1,4 +1,4 @@
-title: Spring Boot 学习 03：日志配置
+title: Spring Boot 日志配置
 author: wangd1
 avatar: '/img/tux1.jpg'
 authorLink: wangd1.top

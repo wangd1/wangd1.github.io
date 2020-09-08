@@ -1,4 +1,4 @@
-title: Spring Boot 学习 01：HelloWorld
+title: Spring Boot HelloWorld
 author: wangd1
 avatar: '/img/tux1.jpg'
 authorLink: wangd1.top

@@ -1,4 +1,4 @@
-title: Spring Boot 学习 06：Springboot与Mybatis集成(注解版)
+title: Spring Boot Mybatis(注解)、多数据源
 author: wangd1
 avatar: '/img/tux1.jpg'
 authorLink: wangd1.top
