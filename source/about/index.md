@@ -13,6 +13,6 @@ photos: /images/bg/20190415.jpg
   <h4>我是 Wangdi，一枚小程序员。</h4>
   <h4>专注 JAVAWEB 开发，偶尔写写前端</h4>
   <h4>关注新技术，喜欢游戏，喜欢运动，偶尔旅行。</h4>
-  <h4>PMP备考中，希望能过.../h4>
+  <h4>PMP备考中，希望能过...</h4>
   </center>
 {% endraw %}
