@@ -1,13 +1,13 @@
 ---
 title: MySQL查询指定日期的数据
-date: 2020-07-28
 author: wangd1
-avatar: '/img/tux1.jpg'
+avatar: /img/tux1.jpg
 authorLink: wangd1.top
 comments: true
 tags:
- - MySQL
-
+  - MySQL
+abbrlink: 63302
+date: 2020-07-28 00:00:00
 ---
 
 > 记录下查询MySQL本周，上周，本月，最近N天的日期

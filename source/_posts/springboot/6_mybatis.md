@@ -1,12 +1,14 @@
+---
 title: Spring Boot Mybatis(注解)、多数据源
 author: wangd1
-avatar: '/img/tux1.jpg'
+avatar: /img/tux1.jpg
 authorLink: wangd1.top
 comments: true
+tags:
+  - Spring Boot
+abbrlink: 58111
 date: 2019-10-18 20:12:15
-tags: [Spring Boot]
 photos:
-
 ---
 
 ## SpringBoot整合Mybatis

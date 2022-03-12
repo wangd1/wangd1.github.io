@@ -1,13 +1,15 @@
+---
 title: Spring Boot 配置文件1
 author: wangd1
-avatar: '/img/tux1.jpg'
+avatar: /img/tux1.jpg
 authorLink: wangd1.top
 comments: true
-date: 2019-7-2 20:12:15
-tags: [Spring Boot]
+tags:
+  - Spring Boot
+abbrlink: 61325
+date: 2019-07-02 20:12:15
 photos:
-
-------
+---
 
 Spring Boot 使用一个全局的配置文件，文件名是固定的：application.properties或application.yml。配置文件要是想被Spring Boot自动加载，需要放置到指定的位置：src/main/resource目录下，一般自定义的配置文件也位于此目录之下。
 

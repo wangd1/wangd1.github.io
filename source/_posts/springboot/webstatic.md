@@ -1,12 +1,14 @@
+---
 title: Spring Boot Web 静态资源的映射规则
 author: wangd1
-avatar: '/img/tux1.jpg'
+avatar: /img/tux1.jpg
 authorLink: wangd1.top
 comments: true
-date: 2019-7-3 22:12:15
-tags: [Spring Boot]
+tags:
+  - Spring Boot
+abbrlink: 60776
+date: 2019-07-03 22:12:15
 photos:
-
 ---
 
 ## SpringBoot对静态资源的映射规则

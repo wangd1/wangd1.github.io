@@ -1,13 +1,15 @@
+---
 title: Spring Boot 日志配置
 author: wangd1
-avatar: '/img/tux1.jpg'
+avatar: /img/tux1.jpg
 authorLink: wangd1.top
 comments: true
-date: 2019-7-3 20:12:15
-tags: [Spring Boot]
+tags:
+  - Spring Boot
+abbrlink: 54485
+date: 2019-07-03 20:12:15
 photos:
-
-------
+---
 
 常见的框架日志有：log4j，log4j2，logback，common-logging(JCL)，java-util-logging(JUL)和slf4j等。
 

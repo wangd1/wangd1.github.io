@@ -1,12 +1,14 @@
+---
 title: Spring Boot Springboot整合Swagger2
 author: wangd1
-avatar: '/img/tux1.jpg'
+avatar: /img/tux1.jpg
 authorLink: wangd1.top
 comments: true
+tags:
+  - Spring Boot
+abbrlink: 19684
 date: 2019-10-14 21:10:11
-tags: [Spring Boot]
 photos:
-
 ---
 
 ## SpringBoot整合Swagger2

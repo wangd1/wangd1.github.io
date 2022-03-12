@@ -1,12 +1,14 @@
+---
 title: Spring Boot Thymeleaf
 author: wangd1
-avatar: '/img/tux1.jpg'
+avatar: /img/tux1.jpg
 authorLink: wangd1.top
 comments: true
-date: 2019-7-4 20:12:15
-tags: [Spring Boot]
+tags:
+  - Spring Boot
+abbrlink: 63984
+date: 2019-07-04 20:12:15
 photos:
-
 ---
 
 ## Thymeleaf介绍

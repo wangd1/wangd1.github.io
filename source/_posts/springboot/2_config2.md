@@ -1,13 +1,15 @@
+---
 title: Spring Boot 配置文件2
 author: wangd1
-avatar: '/img/tux1.jpg'
+avatar: /img/tux1.jpg
 authorLink: wangd1.top
 comments: true
-date: 2019-7-2 21:12:15
-tags: [Spring Boot]
+tags:
+  - Spring Boot
+abbrlink: 61133
+date: 2019-07-02 21:12:15
 photos:
-
-------
+---
 
 对于@ConfigurationProperties注解默认加载全局的配置文件，但是如果所有的配置信息都写在全局的配置文件中就会很臃肿，所以需要自定义配置文件和使用@PropertiesSource注解来加载指定的配置文件。
 

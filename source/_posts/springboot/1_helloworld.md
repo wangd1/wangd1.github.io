@@ -1,14 +1,16 @@
+---
 title: Spring Boot HelloWorld
 author: wangd1
-avatar: '/img/tux1.jpg'
+avatar: /img/tux1.jpg
 authorLink: wangd1.top
 authorAbout: 一个好奇的人
 authorDesc: 一个好奇的人
 comments: true
-date: 2019-7-1 21:12:15
-tags: [Spring Boot]
+tags:
+  - Spring Boot
+abbrlink: 46241
+date: 2019-07-01 21:12:15
 photos:
-
 ---
 
 ## 1.简介

@@ -1,11 +1,13 @@
 ---
 title: Spring Boot JdbcTemplate多数据源
 author: wangd1
-avatar: '/img/tux1.jpg'
+avatar: /img/tux1.jpg
 authorLink: wangd1.top
 comments: true
-date: 2020-9-5 10:12:15
-tags: [Spring Boot]
+tags:
+  - Spring Boot
+abbrlink: 691
+date: 2020-09-05 10:12:15
 photos:
 ---
 
