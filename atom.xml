@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Wangd1&#39;s Blog</title>
+  
+  <subtitle>可山水万程，再难遇你</subtitle>
+  <link href="https://s.wangd1.top/atom.xml" rel="self"/>
+  
+  <link href="https://s.wangd1.top/"/>
+  <updated>2022-09-14T14:08:28.634Z</updated>
+  <id>https://s.wangd1.top/</id>
+  
+  <author>
+    <name>Wangd1</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据库设计中的14个技巧</title>
+    <link href="https://s.wangd1.top/archives/8278.html"/>
+    <id>https://s.wangd1.top/archives/8278.html</id>
+    <published>2022-09-14T14:08:28.634Z</published>
+    <updated>2022-09-14T14:08:28.634Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;转自-https-blog-csdn-net-sirfei-article-details-434994&quot;&gt;&lt;a href=&quot;#转自-https-blog-csdn-net-sirfei-article-details-434994&quot; class=&quot;headerlink&quot; title=&quot;转自  [https://blog.csdn.net/sirfei/article/details/434994&quot;&gt;&lt;/a&gt;转自  [&lt;a href=&quot;https://blog.csdn.net/sirfei/article/details/434994&quot;&gt;https://blog.csdn.net/sirfei/article/details/434994&lt;/a&gt;&lt;/h3&gt;&lt;blockquote&gt;
+&lt;h4 id=&quot;1-原始单据与实体之间的关系&quot;&gt;&lt;a href=&quot;#1-原始单据与实体之间的关系&quot; class=&quot;headerlink&quot; title=&quot;1. 原始单据与实体之间的关系&quot;&gt;&lt;/a&gt;1. 原始单据与实体之间的关系&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;amp;emsp;&amp;amp;emsp;可以是一对一、一对多、多对多的关系。在一般情况下，它们是一对一的关系：即一张原始单据对&lt;/p&gt;
+&lt;p&gt;应且只对应一个实体。在特殊情况下，它们可能是一对多或多对一的关系，即一张原始单证对应多个实&lt;/p&gt;
+&lt;p&gt;体，或多张原始单证对应一个实体。这里的实体可以理解为基本表。明确这种对应关系后，对我们设计&lt;/p&gt;
+&lt;p&gt;录入界面大有好处。&lt;/p&gt;
+&lt;p&gt;　　〖例1〗：一份员工履历资料，在人力资源信息系统中，就对应三个基本表：员工基本情况表、社会&lt;/p&gt;
+&lt;p&gt;关系表、工作简历表。这就是“一张原始单证对应多个实体”的典型例子。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="转载" scheme="https://s.wangd1.top/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Boot JdbcTemplate多数据源</title>
+    <link href="https://s.wangd1.top/archives/691.html"/>
+    <id>https://s.wangd1.top/archives/691.html</id>
+    <published>2020-09-05T02:12:15.000Z</published>
+    <updated>2022-09-14T14:08:28.637Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;Spring-JdbcTemplate是spring对jdbc的封装，省去了自己管理数据库资源的麻烦，使得Jdbc更容易使用。&quot;&gt;&lt;a href=&quot;#Spring-JdbcTemplate是spring对jdbc的封装，省去了自己管理数据库资源的麻烦，使得Jdbc更容易使用。&quot; class=&quot;headerlink&quot; title=&quot;Spring JdbcTemplate是spring对jdbc的封装，省去了自己管理数据库资源的麻烦，使得Jdbc更容易使用。&quot;&gt;&lt;/a&gt;Spring JdbcTemplate是spring对jdbc的封装，省去了自己管理数据库资源的麻烦，使得Jdbc更容易使用。&lt;/h3&gt;&lt;h3 id=&quot;Srping-JdbcTemplate配置druid多数据源时，主要需要在创建JdbcTemplate时为其分配不同的数据源，在访问不同数据库的时候，使用不用的JdbcTemplate即可。&quot;&gt;&lt;a href=&quot;#Srping-JdbcTemplate配置druid多数据源时，主要需要在创建JdbcTemplate时为其分配不同的数据源，在访问不同数据库的时候，使用不用的JdbcTemplate即可。&quot; class=&quot;headerlink&quot; title=&quot;Srping JdbcTemplate配置druid多数据源时，主要需要在创建JdbcTemplate时为其分配不同的数据源，在访问不同数据库的时候，使用不用的JdbcTemplate即可。&quot;&gt;&lt;/a&gt;Srping JdbcTemplate配置druid多数据源时，主要需要在创建JdbcTemplate时为其分配不同的数据源，在访问不同数据库的时候，使用不用的JdbcTemplate即可。&lt;/h3&gt;</summary>
+    
+    
+    
+    
+    <category term="Spring Boot" scheme="https://s.wangd1.top/tags/Spring-Boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL查询指定日期的数据</title>
+    <link href="https://s.wangd1.top/archives/63302.html"/>
+    <id>https://s.wangd1.top/archives/63302.html</id>
+    <published>2020-07-27T16:00:00.000Z</published>
+    <updated>2022-09-14T14:08:28.634Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;记录下查询MySQL本周，上周，本月，最近N天的日期&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+    <category term="MySQL" scheme="https://s.wangd1.top/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Boot Mybatis(注解)、多数据源</title>
+    <link href="https://s.wangd1.top/archives/58111.html"/>
+    <id>https://s.wangd1.top/archives/58111.html</id>
+    <published>2019-10-18T12:12:15.000Z</published>
+    <updated>2022-09-14T14:08:28.637Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;SpringBoot整合Mybatis&quot;&gt;&lt;a href=&quot;#SpringBoot整合Mybatis&quot; class=&quot;headerlink&quot; title=&quot;SpringBoot整合Mybatis&quot;&gt;&lt;/a&gt;SpringBoot整合Mybatis&lt;/h2&gt;&lt;h3 id=&quot;创建工程，添加依赖&quot;&gt;&lt;a href=&quot;#创建工程，添加依赖&quot; class=&quot;headerlink&quot; title=&quot;创建工程，添加依赖&quot;&gt;&lt;/a&gt;创建工程，添加依赖&lt;/h3&gt;&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--连接池--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;com.alibaba&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;druid-spring-boot-starter&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;1.1.10&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;org.springframework.boot&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;spring-boot-starter-web&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--Mybatis--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;org.mybatis.spring.boot&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;mybatis-spring-boot-starter&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;2.1.1&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;comment&quot;&gt;&amp;lt;!--MySql驱动--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;mysql&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;mysql-connector-java&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;scope&lt;/span&gt;&amp;gt;&lt;/span&gt;runtime&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;scope&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+    <category term="Spring Boot" scheme="https://s.wangd1.top/tags/Spring-Boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Boot Springboot整合Swagger2</title>
+    <link href="https://s.wangd1.top/archives/19684.html"/>
+    <id>https://s.wangd1.top/archives/19684.html</id>
+    <published>2019-10-14T13:10:11.000Z</published>
+    <updated>2022-09-14T14:08:28.636Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;SpringBoot整合Swagger2&quot;&gt;&lt;a href=&quot;#SpringBoot整合Swagger2&quot; class=&quot;headerlink&quot; title=&quot;SpringBoot整合Swagger2&quot;&gt;&lt;/a&gt;SpringBoot整合Swagger2&lt;/h2&gt;&lt;h3 id=&quot;swagger2-是一个规范和完整的框架，用于生成、描述、调用和可视化Restful风格的web服务：&quot;&gt;&lt;a href=&quot;#swagger2-是一个规范和完整的框架，用于生成、描述、调用和可视化Restful风格的web服务：&quot; class=&quot;headerlink&quot; title=&quot;swagger2 是一个规范和完整的框架，用于生成、描述、调用和可视化Restful风格的web服务：&quot;&gt;&lt;/a&gt;swagger2 是一个规范和完整的框架，用于生成、描述、调用和可视化Restful风格的web服务：&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;接口文档在线自动生成，文档随接口变动实时更新，节省维护成本&lt;/li&gt;
+&lt;li&gt;支持在线接口测试，不依赖第三方工具&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;更可以大大的减少沟通成本。&quot;&gt;&lt;a href=&quot;#更可以大大的减少沟通成本。&quot; class=&quot;headerlink&quot; title=&quot;更可以大大的减少沟通成本。&quot;&gt;&lt;/a&gt;更可以大大的减少沟通成本。&lt;/h3&gt;</summary>
+    
+    
+    
+    
+    <category term="Spring Boot" scheme="https://s.wangd1.top/tags/Spring-Boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Boot Thymeleaf</title>
+    <link href="https://s.wangd1.top/archives/63984.html"/>
+    <id>https://s.wangd1.top/archives/63984.html</id>
+    <published>2019-07-04T12:12:15.000Z</published>
+    <updated>2022-09-14T14:08:28.636Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Thymeleaf介绍&quot;&gt;&lt;a href=&quot;#Thymeleaf介绍&quot; class=&quot;headerlink&quot; title=&quot;Thymeleaf介绍&quot;&gt;&lt;/a&gt;Thymeleaf介绍&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Thymeleaf&lt;/code&gt;是现代化服务器端的Java模板引擎，不同与其它几种模板的是&lt;code&gt;Thymeleaf&lt;/code&gt;的语法更加接近HTML，并且具有很高的扩展性。详细资料可以浏览&lt;a href=&quot;https://www.thymeleaf.org/&quot;&gt;官网&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;支持无网络环境下运行，可直接运行，这样会加载默认的数据。如果数据返回到页面时，Thymeleaf的标签会动态替换掉静态内容。&lt;/p&gt;
+&lt;p&gt;SpringBoot官方推荐模板，提供了可选集成模块(&lt;code&gt;spring-boot-starter-thymeleaf&lt;/code&gt;)，可以快速的实现表单绑定、属性编辑器、国际化等功能。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+    <category term="Spring Boot" scheme="https://s.wangd1.top/tags/Spring-Boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Boot Web 静态资源的映射规则</title>
+    <link href="https://s.wangd1.top/archives/60776.html"/>
+    <id>https://s.wangd1.top/archives/60776.html</id>
+    <published>2019-07-03T14:12:15.000Z</published>
+    <updated>2022-09-14T14:08:28.637Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Spring Boot" scheme="https://s.wangd1.top/tags/Spring-Boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Boot 日志配置</title>
+    <link href="https://s.wangd1.top/archives/54485.html"/>
+    <id>https://s.wangd1.top/archives/54485.html</id>
+    <published>2019-07-03T12:12:15.000Z</published>
+    <updated>2022-09-14T14:08:28.636Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;常见的框架日志有：log4j，log4j2，logback，common-logging(JCL)，java-util-logging(JUL)和slf4j等。&lt;/p&gt;
+&lt;p&gt;而日志框架主要分两类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;日志门面（抽象）如：jboss-logging，slf4j，JCL&lt;/li&gt;
+&lt;li&gt;日志实现（实现）如：log4j，log4j2，logback，JUL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对于日志实现，JUL实现简陋，很多地方被开发者吐槽，所以排除；log4j和logback是同一个作者开发的，且logback是log4j的升级版，比log4j会更好点，排除log4j；log4j2不是log4j的升级版，因为太过于优秀，部分框架对其的支持有限，所以排除。&lt;/p&gt;
+&lt;p&gt;所以日志实现选中logback。&lt;/p&gt;
+&lt;p&gt;对于日志门面，jboss-logging很久未更新，而slf4j的作者就是log4j和logback的作者，所以选用slf4j和logback会比较合得来….&lt;/p&gt;
+&lt;p&gt;所以日志门面选用slf4j。并且在springboot中也是使用的  slf4j + logback。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Spring Boot" scheme="https://s.wangd1.top/tags/Spring-Boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Boot 配置文件2</title>
+    <link href="https://s.wangd1.top/archives/61133.html"/>
+    <id>https://s.wangd1.top/archives/61133.html</id>
+    <published>2019-07-02T13:12:15.000Z</published>
+    <updated>2022-09-14T14:08:28.635Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;对于@ConfigurationProperties注解默认加载全局的配置文件，但是如果所有的配置信息都写在全局的配置文件中就会很臃肿，所以需要自定义配置文件和使用@PropertiesSource注解来加载指定的配置文件。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Spring Boot" scheme="https://s.wangd1.top/tags/Spring-Boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Boot 配置文件1</title>
+    <link href="https://s.wangd1.top/archives/61325.html"/>
+    <id>https://s.wangd1.top/archives/61325.html</id>
+    <published>2019-07-02T12:12:15.000Z</published>
+    <updated>2022-09-14T14:08:28.635Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Spring Boot 使用一个全局的配置文件，文件名是固定的：application.properties或application.yml。配置文件要是想被Spring Boot自动加载，需要放置到指定的位置：src&amp;#x2F;main&amp;#x2F;resource目录下，一般自定义的配置文件也位于此目录之下。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Spring Boot" scheme="https://s.wangd1.top/tags/Spring-Boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Boot HelloWorld</title>
+    <link href="https://s.wangd1.top/archives/46241.html"/>
+    <id>https://s.wangd1.top/archives/46241.html</id>
+    <published>2019-07-01T13:12:15.000Z</published>
+    <updated>2022-09-14T14:08:28.635Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot; title=&quot;1.简介&quot;&gt;&lt;/a&gt;1.简介&lt;/h2&gt;&lt;p&gt;Spring Boot的设计目的就是简化Spring应用的开发，开启了各种自动装配，约定大于配置，去繁从简，引入相关的依赖就可以迅速搭建起一个web工程。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Spring Boot" scheme="https://s.wangd1.top/tags/Spring-Boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>晨雾</title>
+    <link href="https://s.wangd1.top/archives/52752.html"/>
+    <id>https://s.wangd1.top/archives/52752.html</id>
+    <published>2019-03-07T16:00:00.000Z</published>
+    <updated>2022-09-14T14:08:28.638Z</updated>
+    
+    
+    <summary type="html">&lt;center&gt;前两天拍的清晨的大雾，能见度很低，给人一种窒息感。但是站在高处看有种仙境的感觉，而且，大雾之后，是万里无云的蓝天，也算是给阴雨许多天的合肥一个不错的交代了。&lt;/center&gt;</summary>
+    
+    
+    
+    
+    <category term="生活" scheme="https://s.wangd1.top/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="随想" scheme="https://s.wangd1.top/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>乌镇</title>
+    <link href="https://s.wangd1.top/archives/26974.html"/>
+    <id>https://s.wangd1.top/archives/26974.html</id>
+    <published>2018-12-18T13:12:15.000Z</published>
+    <updated>2022-09-14T14:08:28.637Z</updated>
+    
+    
+    <summary type="html">&lt;center&gt;乌镇行&lt;/center&gt;</summary>
+    
+    
+    
+    
+    <category term="生活" scheme="https://s.wangd1.top/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="随想" scheme="https://s.wangd1.top/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>冬</title>
+    <link href="https://s.wangd1.top/archives/60019.html"/>
+    <id>https://s.wangd1.top/archives/60019.html</id>
+    <published>2018-11-07T14:16:01.000Z</published>
+    <updated>2022-09-14T14:08:28.638Z</updated>
+    
+    
+    <summary type="html">&lt;center&gt;冬将至&lt;/center&gt;</summary>
+    
+    
+    
+    
+    <category term="随想" scheme="https://s.wangd1.top/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+  </entry>
+  
+</feed>
