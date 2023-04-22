@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"s.wangd1.top","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-1}},"activeClass":"gitalk"},"stickytabs":true,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"s.wangd1.top","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-1}},"activeClass":"gitalk"},"stickytabs":true,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="常见的框架日志有：log4j，log4j2，logback，common-logging(JCL)，java-util-logging(JUL)和slf4j等。 而日志框架主要分两类：  日志门面（抽象）如：jboss-logging，slf4j，JCL 日志实现（实现）如：log4j，log4j2，logback，JUL  对于日志实现，JUL实现简陋，很多地方被开发者吐槽，所以排除；log4j">
 <meta property="og:type" content="article">
@@ -38,7 +38,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566059371896.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566060346853.png">
 <meta property="article:published_time" content="2019-07-03T12:12:15.000Z">
-<meta property="article:modified_time" content="2022-09-14T14:08:28.636Z">
+<meta property="article:modified_time" content="2023-04-17T07:27:28.339Z">
 <meta property="article:author" content="Wangd1">
 <meta property="article:tag" content="Spring Boot">
 <meta name="twitter:card" content="summary">
@@ -270,7 +270,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-09-14 22:08:28" itemprop="dateModified" datetime="2022-09-14T22:08:28+08:00">2022-09-14</time>
+      <time title="修改时间：2023-04-17 15:27:28" itemprop="dateModified" datetime="2023-04-17T15:27:28+08:00">2023-04-17</time>
     </span>
 
   
@@ -324,7 +324,7 @@
 
 <h3 id="如何让系统中的所有的日志都统一到slf4j"><a href="#如何让系统中的所有的日志都统一到slf4j" class="headerlink" title="如何让系统中的所有的日志都统一到slf4j"></a>如何让系统中的所有的日志都统一到slf4j</h3><p>在系统中，自己使用了slf4j+logback，但是Spring默认的是commons-logging；如果集成Hibernate，他又自带了jboss-logging；如果集成mybatis，他又有自己的日志系统。</p>
 <p>想统一日志框架，都使用slf4j输出日志，可以参考slf4j官网 <a target="_blank" rel="noopener" href="https://www.slf4j.org/legacy.html">https://www.slf4j.org/legacy.html</a></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/legacy.png" alt="legacy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/legacy.png" alt="legacy"></p>
 <p>slf4j提供了解决方案：</p>
 <ol>
 <li><p>将系统中的其他日志框架排除出去（删除其他日志框架的jar包，如：commons-logging日志的jar包等）；</p>
@@ -333,19 +333,19 @@
 </li>
 <li><p>导入slf4j其他日志包的实现；</p>
 <p>那些中间包实际上提供了原有包的功能，但是也对slf4j进行了实现。就像log4j-to-slf4j.jar下面的路径还是和log4j一样，但是里面的日志记录的功能使用的是slf4j：</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566057101545.png" alt="1566057101545"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566057101545.png" alt="1566057101545"></p>
 </li>
 </ol>
 <h3 id="Spring-Boot的日志关系"><a href="#Spring-Boot的日志关系" class="headerlink" title="Spring Boot的日志关系"></a>Spring Boot的日志关系</h3><p>新建一个springboot项目，然后打开pom文件，查看依赖（右键&gt;Diagrams&gt;Show…）</p>
 <p>看到SpringBoot依赖spring-boot-starter</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566056351946.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566056351946.png"></p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.7.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>compile<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>而spring-boot-starter依赖spring-boot-starter-logging，所以springboot使用它来做日志功能。</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-logging<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.7.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>compile<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>看一下spring-boot-starter-logging：</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566056814856.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566056814856.png"></p>
 <p>所以springboot底层是使用slf4j+logback的方式进行日志记录的，并把其他日志替换成了slf4j；</p>
 <h3 id="使用和配置"><a href="#使用和配置" class="headerlink" title="使用和配置"></a><a target="_blank" rel="noopener" href="https://docs.spring.io/spring-boot/docs/2.1.7.RELEASE/reference/html/boot-features-logging.html#boot-features-logging-format">使用和配置</a></h3><ol>
 <li>修改日志级别</li>
@@ -353,12 +353,12 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"><span class="keyword">import</span> org.junit.runner.RunWith;</span><br><span class="line"><span class="keyword">import</span> org.slf4j.Logger;</span><br><span class="line"><span class="keyword">import</span> org.slf4j.LoggerFactory;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.test.context.SpringBootTest;</span><br><span class="line"><span class="keyword">import</span> org.springframework.test.context.junit4.SpringRunner;</span><br><span class="line"></span><br><span class="line"><span class="meta">@RunWith(SpringRunner.class)</span></span><br><span class="line"><span class="meta">@SpringBootTest</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SpringBoot03LoggingApplicationTests</span> &#123;</span><br><span class="line">    <span class="type">Logger</span> <span class="variable">logger</span> <span class="operator">=</span> LoggerFactory.getLogger(SpringBoot03LoggingApplicationTests.class);</span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">contextLoads</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//日记级别：</span></span><br><span class="line">        <span class="comment">//从低到高：trace&lt;debug&lt;info&lt;warn&lt;error</span></span><br><span class="line">        <span class="comment">//可以调整输出的日志级别；日志就只在这个级别和之后的高级别生效</span></span><br><span class="line">        logger.trace(<span class="string">&quot;这是trace日志&quot;</span>);</span><br><span class="line">        logger.debug(<span class="string">&quot;这是debug日志&quot;</span>);  <span class="comment">//调试日志</span></span><br><span class="line">        <span class="comment">//springboot默认的日志级别是info,所以运行时只会打印info级别和高于info级别的日志信息</span></span><br><span class="line">        logger.info(<span class="string">&quot;这是info日志&quot;</span>);  <span class="comment">//</span></span><br><span class="line">        logger.warn(<span class="string">&quot;这是warn日志&quot;</span>);  <span class="comment">//警告日志</span></span><br><span class="line">        logger.error(<span class="string">&quot;这是error日志&quot;</span>); <span class="comment">//错误日志</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>所以打印是：</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566058398543.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566058398543.png"></p>
 <p>但是可以通过properties等配置文件修改日志级别：</p>
 <figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">logging.level.com.wangd</span> = <span class="string">trace</span></span><br></pre></td></tr></table></figure>
 
 <p>修改指定位置文件的日志级别后打印如下：</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566058593348.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566058593348.png"></p>
 <ol start="2">
 <li><p>生成日志文件</p>
 <p>指定logging.file</p>
@@ -366,11 +366,11 @@
 </ol>
 <figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">logging.level.com.wangd</span> = <span class="string">trace</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"># 不指定路径和文件的情况下，只在控制台打印日志信息</span></span><br><span class="line"><span class="comment"># 若指定了logging.file,而无论是否指定logging.path,都只在指定文件中保存日志信息,而不会在路径中保存日志</span></span><br><span class="line"><span class="comment"># 对于logging.path,若指定了目录，则会在这个目录中自动生成spring.log保存日志信息</span></span><br><span class="line"><span class="comment">#logging.path=/spring/log</span></span><br><span class="line"><span class="attr">logging.file</span>=<span class="string">spring.log</span></span><br></pre></td></tr></table></figure>
 
-<p><img data-src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566059238679.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566059238679.png"></p>
 <p>指定logging.path&#x3D;&#x2F;spring&#x2F;log</p>
 <figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">logging.level.com.wangd</span> = <span class="string">trace</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"># 不指定路径和文件的情况下，只在控制台打印日志信息</span></span><br><span class="line"><span class="comment"># 若指定了logging.file,而无论是否指定logging.path,都只在指定文件中保存日志信息,而不会在路径中保存日志</span></span><br><span class="line"><span class="comment"># 对于logging.path,若指定了目录，则会在当前磁盘的这个目录中自动生成spring.log保存日志信息</span></span><br><span class="line"><span class="attr">logging.path</span>=<span class="string">/spring/log</span></span><br><span class="line"><span class="comment">#logging.file=spring.log</span></span><br></pre></td></tr></table></figure>
 
-<p><img data-src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566059371896.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566059371896.png"></p>
 <ol start="3">
 <li><p>修改日志输出格式</p>
 <figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 日志输出格式:</span></span><br><span class="line"><span class="comment"># %d:日期时间</span></span><br><span class="line"><span class="comment"># %thread:线程名</span></span><br><span class="line"><span class="comment"># %-5level:级别从左显示5个字符宽度</span></span><br><span class="line"><span class="comment"># %logger&#123;50&#125;:表示logger名字最长50个字符,否则按照句点切割</span></span><br><span class="line"><span class="comment"># %msg:日志消息</span></span><br><span class="line"><span class="comment"># %n:换行符</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"># 在控制台输出日志的格式</span></span><br><span class="line"><span class="attr">logging.pattern.console</span>=<span class="string">%d&#123;yyyy-MM-dd&#125; [%thread] %-2level %logger&#123;5&#125; - %msg%n</span></span><br><span class="line"><span class="comment"># 在日志文件中输出日志的格式</span></span><br><span class="line"><span class="attr">logging.pattern.file</span>=<span class="string">%d&#123;yyyy-MM-dd&#125; === [%thread] %-5level %logger&#123;50&#125; - %msg%n</span></span><br></pre></td></tr></table></figure>
@@ -393,7 +393,7 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RunWith(SpringRunner.class)</span></span><br><span class="line"><span class="meta">@SpringBootTest</span></span><br><span class="line"><span class="meta">@Slf4j</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SpringBoot03LoggingApplicationTests</span> &#123;</span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">contextLoads</span><span class="params">()</span> &#123;</span><br><span class="line">        log.info(<span class="string">&quot;这是info日志&quot;</span>);  <span class="comment">//</span></span><br><span class="line">        log.warn(<span class="string">&quot;这是warn日志&quot;</span>);  <span class="comment">//警告日志</span></span><br><span class="line">        log.error(<span class="string">&quot;这是error日志&quot;</span>); <span class="comment">//错误日志</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;  </span><br></pre></td></tr></table></figure>
 </li>
 <li><p>指定日志配置文件</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566060346853.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.35/blogimg/logging/1566060346853.png"></p>
 </li>
 </ol>
 <ul>
@@ -464,12 +464,14 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
+      <span>站点总字数：</span>
     <span title="站点总字数">37k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
+      <span>站点阅读时长 &asymp;</span>
     <span title="站点阅读时长">34 分钟</span>
   </span>
 </div>
@@ -491,7 +493,7 @@
       </span>
     </span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
 <!-- 网站运行时间的设置 
@@ -519,12 +521,11 @@ setInterval("createtime()",250);
   </footer>
 
   
-  <script size="300" alpha="0.6" zIndex="-1" src="https://cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
 <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
@@ -548,3 +549,13 @@ setInterval("createtime()",250);
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/live2d-widget-model-shizuku/assets/shizuku.model.json"},"display":{"position":"left","width":130,"height":260,"hOffset":50},"mobile":{"show":true},"log":false});</script></body>
 </html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/clicklove.js"></script>
+
+<script type="text/javascript"
+    count="150"
+    opacity: 1
+    src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
+
+

@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"s.wangd1.top","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-1}},"activeClass":"gitalk"},"stickytabs":true,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"s.wangd1.top","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-1}},"activeClass":"gitalk"},"stickytabs":true,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="Spring Boot 使用一个全局的配置文件，文件名是固定的：application.properties或application.yml。配置文件要是想被Spring Boot自动加载，需要放置到指定的位置：src&#x2F;main&#x2F;resource目录下，一般自定义的配置文件也位于此目录之下。">
 <meta property="og:type" content="article">
@@ -33,7 +33,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.33/blogimg/config/1565873726839.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.33/blogimg/config/1565874363695.png">
 <meta property="article:published_time" content="2019-07-02T12:12:15.000Z">
-<meta property="article:modified_time" content="2022-09-14T14:08:28.635Z">
+<meta property="article:modified_time" content="2023-04-17T07:27:28.338Z">
 <meta property="article:author" content="Wangd1">
 <meta property="article:tag" content="Spring Boot">
 <meta name="twitter:card" content="summary">
@@ -265,7 +265,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-09-14 22:08:28" itemprop="dateModified" datetime="2022-09-14T22:08:28+08:00">2022-09-14</time>
+      <time title="修改时间：2023-04-17 15:27:28" itemprop="dateModified" datetime="2023-04-17T15:27:28+08:00">2023-04-17</time>
     </span>
 
   
@@ -352,19 +352,19 @@
 <p>加入提供的maven依赖，可以在编写yml文件时有提示。</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 导入配置文件处理器，配置文件进行绑定时会有提示--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-configuration-processor<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img data-src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.33/blogimg/config/1565872626559.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.33/blogimg/config/1565872626559.png"></p>
 <p>然后编写单元测试，注入Person，然后打印配置文件里的值；</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RunWith(SpringRunner.class)</span></span><br><span class="line"><span class="meta">@SpringBootTest</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SpringBoot02ConfigApplicationTests</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    Person mPerson;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">contextLoads</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(mPerson);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行单元测试可以看到结果：</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.33/blogimg/config/1565872871411.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.33/blogimg/config/1565872871411.png"></p>
 <p>如果使用的是properties文件且有中文的话，打印出来会乱码（idea的properties配置文件编码是utf-8），需要配置一下就不会乱码了。</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.33/blogimg/config/1565873726839.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.33/blogimg/config/1565873726839.png"></p>
 <h2 id="4-获取配置文件的值-Value方式"><a href="#4-获取配置文件的值-Value方式" class="headerlink" title="4. 获取配置文件的值(@Value方式)"></a>4. 获取配置文件的值(@Value方式)</h2><p>@Value可以获取的值有 <strong>字面量</strong>（字符串等）、**${key}<strong>（从环境变量、配置文件中获取值）、</strong>#{SpEL}**</p>
 <p>如：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="comment">//@ConfigurationProperties(prefix = &quot;person&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Person</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value(&quot;$&#123;person.lastName&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String lastName;</span><br><span class="line">    <span class="meta">@Value(&quot;#&#123;10+10&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="meta">@Value(&quot;false&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> Boolean boss;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>打印</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.33/blogimg/config/1565874363695.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wangd1/cdn@2.33/blogimg/config/1565874363695.png"></p>
 <h2 id="5-Value获取值和-ConfigurationProperties获取值比较"><a href="#5-Value获取值和-ConfigurationProperties获取值比较" class="headerlink" title="5. @Value获取值和@ConfigurationProperties获取值比较"></a>5. @Value获取值和@ConfigurationProperties获取值比较</h2><table>
 <thead>
 <tr>
@@ -469,12 +469,14 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
+      <span>站点总字数：</span>
     <span title="站点总字数">37k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
+      <span>站点阅读时长 &asymp;</span>
     <span title="站点阅读时长">34 分钟</span>
   </span>
 </div>
@@ -496,7 +498,7 @@
       </span>
     </span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
 <!-- 网站运行时间的设置 
@@ -524,12 +526,11 @@ setInterval("createtime()",250);
   </footer>
 
   
-  <script size="300" alpha="0.6" zIndex="-1" src="https://cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
 <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
@@ -553,3 +554,13 @@ setInterval("createtime()",250);
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/live2d-widget-model-shizuku/assets/shizuku.model.json"},"display":{"position":"left","width":130,"height":260,"hOffset":50},"mobile":{"show":true},"log":false});</script></body>
 </html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/clicklove.js"></script>
+
+<script type="text/javascript"
+    count="150"
+    opacity: 1
+    src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
+
+
