@@ -36,9 +36,9 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+# scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 # scheme: Gemini
 
 # Dark Mode
@@ -102,8 +102,8 @@ menu:
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
-  playlist: /playlist/ || fa fa-music
-  comment: /guestbook/ || fa fa-comment
+  # playlist: /playlist/ || fa fa-music
+  # comment: /guestbook/ || fa fa-comment
   about: /about/ || fa fa-user
   公益404: /404/ || fa fa-heartbeat fa-fw
 
@@ -266,6 +266,11 @@ symbols_count_time:
   awl: 4                   # Average Word Length
   wpm: 275                 # Words Per Minute（每分钟阅读词数）
   suffix: mins.
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
+  symbols: false
+  time: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: true
@@ -392,9 +397,9 @@ codeblock:
 back2top:
   enable: true
   # Back to top in sidebar.
-  sidebar: false
+  sidebar: true
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
@@ -879,10 +884,16 @@ pace:
 # Canvas ribbon
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 300 # The width of the ribbon
   alpha: 0.6 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
+# Canvas-nest
+# Dependencies: https://github.com/theme-next/theme-next-canvas-nest
+# For more information: https://github.com/hustcc/canvas-nest.js
+# canvas_nest
+canvas_nest: true # 开启动画 老版的不能用enable: true
+
 
 
 # ---------------------------------------------------------------

@@ -102,8 +102,8 @@ menu:
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
-  playlist: /playlist/ || fa fa-music
-  comment: /guestbook/ || fa fa-comment
+  # playlist: /playlist/ || fa fa-music
+  # comment: /guestbook/ || fa fa-comment
   about: /about/ || fa fa-user
   公益404: /404/ || fa fa-heartbeat fa-fw
 
